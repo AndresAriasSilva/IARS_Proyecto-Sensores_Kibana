@@ -1,0 +1,15 @@
+PUT /sensores
+{
+  "mappings": {
+    "datos_recibidos": {
+      "properties": {
+        "valor": {"type": "float"},
+        "magnitud":   { "type": "keyword"},
+        "m_descripcion":   { "type": "keyword"},
+        "coordenadas_xy":  { "type": "geo_point"},
+        "l_descripcion":   { "type": "text"},
+        "timedata": {"type": "date"}
+      }
+   }
+ }
+}
