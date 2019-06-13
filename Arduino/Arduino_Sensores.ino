@@ -1,91 +1,72 @@
-//Trabajo IARS - Sensores v.1
+//Trabajo IARS - Sensores v.2
 #include <Wire.h>
 #include <LiquidCrystal.h>
 #define COLS 16 // Columnas del LCD
 #define ROWS 2 // Filas del LCD
 
-float Temperatura, Humedad, Viento, Presion, UVA;
 int tmp102Address = 0x48;
+
+float Tem1, Hum1, Vie1, Pre1, UVA1; //Loc 1
+float Tem2, Hum2, Vie2, Pre2, UVA2; //Loc 2
+float Tem3, Hum3, Vie3, Pre3, UVA3; //Loc 3
+float Tem4, Hum4, Vie4, Pre4, UVA4; //Loc 4
+float Tem5, Hum5, Vie5, Pre5, UVA5; //Loc 5
+
+
 LiquidCrystal lcd(12, 11, 10, 9, 8, 7);
 
 void setup() 
 {
   Serial.begin(9600);
-  pinMode(4 , OUTPUT);  //
-  pinMode(5 , OUTPUT);  
-  Wire.begin();       //se inicializa la comunicacion i2c 
-  lcd.begin(16, 2);   //se inicializa el display lcd
+  pinMode(4 , OUTPUT);  // led indicador
+  Wire.begin();         //se inicializa la comunicacion i2c 
+  lcd.begin(16, 2);     //se inicializa el display lcd
   lcd.setCursor(0,0);
-  lcd.write("I Te Hu Pre Vi U");
+  lcd.write("Iniciando...");
 }
 
 void loop()
 {
-  
-    
-    if (Serial.available())
-    {
+  if (Serial.available())
+  {
     randomSeed(analogRead(A0));
-    int ID = Serial.read()- 48; //ASCII 
+    int inicio = Serial.read()- 48; //ASCII 
         
-    if (ID == 1){
-      Temperatura = getTemp();
-      Humedad = random(10, 19) + (random(0, 999) / 1000.0);
-      Presion = random(600,900) + (random(0, 999) / 1000.0); 
-      Viento = random(10, 19) + (random(0, 999) / 1000.0);
-      UVA = random(0, 4) + (random(0, 999) / 1000.0);
-      digitalWrite(4 , HIGH);    
-      delay(700);                  
-      digitalWrite(4 , LOW);    
-      }
-    
-    if (ID == 2){
-      Temperatura = random(50, 60) + random(0, 999)/1000.0;
-      Humedad = random(20, 29) + random(0, 999)/1000.0;
-      Presion = random(600,900) + random(0, 999)/1000.0;
-      Viento = random(20, 29) + random(0, 999)/1000.0;
-      UVA = random(0, 4) + random(0, 999)/1000.0;
-      digitalWrite(4 , HIGH);    
-      delay(700);                  
-      digitalWrite(4 , LOW);
-      }
+    if (inicio == 1)
+    {          
+      for (int Id_loc = 1; Id_loc <= 5; Id_loc++) {    
 
-    if (ID == 3){
-      Temperatura = random(50, 60) + random(0, 999)/1000.0;
-      Humedad = random(30, 39) + random(0, 999)/1000.0;
-      Presion = random(600,900) + random(0, 999)/1000.0;
-      Viento = random(30, 39) + random(0, 999)/1000.0;
-      UVA = random(0.5, 4) + random(0, 999)/1000.0;
-      digitalWrite(4 , HIGH);    
-      delay(700);                  
-      digitalWrite(4 , LOW);
-      }
-     
-    //AGREGAR CONDICION PARA VALORES DE ID FUERA DE RANGO
-    
-    lcd.setCursor(0, 1);
-    lcd.print(ID);           //imprimir el ID en el LCD
-    lcd.setCursor(2, 1);
-    lcd.print(Temperatura,0);   //imprimir la temperatura en el LCD
-    lcd.setCursor(5, 1);
-    lcd.print(Humedad,0);       //imprimir la humedad en el LCD
-    lcd.setCursor(8, 1);
-    lcd.print(Presion,0);        //imprimirla presion en el LCD
-    lcd.setCursor(12, 1);
-    lcd.print(Viento,0);        //imprimir viento en el LCD   
-    lcd.setCursor(15, 1);
-    lcd.print(UVA,0);        //imprimir UVA en el LCD
-   
-    Serial.println(ID);
-    Serial.println(Temperatura,3);
-    Serial.println(Humedad,3);
-    Serial.println(Presion,3); 
-    Serial.println(Viento,3);
-    Serial.println(UVA,3);       
-    }
+        Tem1 = getTemp();                      //Temperatura sensor Loc 1
+        Tem2 = Tem1 + random(100, 250)/100.0;
+        Tem3 = Tem1 + random(100, 250)/100.0;
+        Tem4 = Tem1 + random(100, 250)/100.0;
+        Tem5 = Tem1 + random(100, 250)/100.0;
+        
+        lcd.setCursor(0,0); lcd.write("Loc. Sens. Valor");
+        lcd.setCursor(0,1); lcd.print(Id_loc);
+        lcd.setCursor(5,1); lcd.write("Temp");
+        lcd.setCursor(11,1);
+                   
+        ////////////////////////////////////////////////////////////
+        //Serial.println(Id_loc);                    //Id_localizacion
+        //Serial.println(1);                         //Id_magnitud
+        if (Id_loc == 1){Serial.print(Tem1,3);lcd.print(Tem1,2);}
+        if (Id_loc == 2){Serial.print(Tem2,3);lcd.print(Tem2,2);}
+        if (Id_loc == 3){Serial.print(Tem3,3);lcd.print(Tem3,2);}
+        if (Id_loc == 4){Serial.print(Tem4,3);lcd.print(Tem4,2);}
+        if (Id_loc == 5){Serial.print(Tem5,3);lcd.print(Tem5,2);}                        
+        ////////////////////////////////////////////////////////////
+        digitalWrite(4 , HIGH);             //indicador led Arduino
+        delay(500);         
+        digitalWrite(4 , LOW);       
+        delay(2000); 
+      }          
+    } 
+  }  
 }
 
-//FuncionTemperatura
+
+//Funcion Temperatura
 float getTemp()
 {
   Wire.requestFrom(tmp102Address,2); 
@@ -93,6 +74,6 @@ float getTemp()
   byte LSB = Wire.read();
   //it's a 12bit int, using two's compliment for negative
   int TemperatureSum = ((MSB << 8) | LSB) >> 4; 
-  float Temperatura = TemperatureSum*0.0625;
-  return Temperatura;
+  float Tem1 = TemperatureSum*0.0625;
+  return Tem1;
 }
