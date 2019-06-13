@@ -1,4 +1,4 @@
-//Trabajo IARS - Sensores v.3
+//Trabajo IARS - Sensores v.3 Final
 #include <Wire.h>
 #include <LiquidCrystal.h>
 #include <DHT.h>
