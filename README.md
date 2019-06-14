@@ -1,10 +1,27 @@
-# IARS_Proyect
-MSIET - IARS 
-
 <html>
 <body>
 
-<p><b>Instalación de Elasticsearch mediante Docker</b><p>
+# Simulación de Sensores e Integración en Plataformas Elasticsearch y Kibana
+
+<p><b>Colaboradores</p></b>
+<ul>
+<li>Andrés Arias</li>
+<li>Jorge S. Carranco</li>
+<li>Génesis Vásquez</li>
+</ul>
+
+<p><b>Resumen del Proyecto</b></p>
+
+
+<p><b>Archivos del Repositorio</b></p>
+<ol>
+<li>Arduino: Repositorio de....</li>
+<li>Node-Red: Repositorio de....</li>
+<li>Elasticsearch: Repositorio de....</li>
+<li>Elasticsearch: Repositorio de....</li>
+</ol>
+
+<p><b>Instalación de Elasticsearch mediante Docker</b></p>
   
 ```powershell
 sudo docker run\
@@ -15,7 +32,7 @@ sudo docker run\
   docker.elastic.co/elasticsearch/elasticsearch:5.4.3
 ```
 
-<p><b>Instalación de Kibana mediante Docker</b><p>
+<p><b>Instalación de Kibana mediante Docker</b></p>
   
 ```powershell
 sudo docker run \
@@ -26,13 +43,13 @@ sudo docker run \
   docker.elastic.co/kibana/kibana:5.4.3
 ```
 
-<p><b>DSL Query útiles</b><p>
+<p><b>DSL Query útiles</b></p>
  
  Obtener los índices almacenados en Elasticsearch
 ```json
  GET /_cat/indices?v
  ```
-Pone datos de sensores en el indice
+Pone datos en el indice
  ```json
 POST my_index/my_type/_id
 {
