@@ -1,135 +1,95 @@
 [
     {
-        "id": "ccf5a9c4.5dc2b8",
+        "id": "905fe76e.0561c8",
         "type": "tab",
-        "label": "Flow 4",
+        "label": "Sensores",
         "disabled": false,
         "info": ""
     },
     {
-        "id": "c76c7ca4.663a4",
+        "id": "f288efb2.8e4e7",
         "type": "inject",
-        "z": "ccf5a9c4.5dc2b8",
-        "name": "PARAR_Sim",
-        "topic": "",
-        "payload": "STOP",
-        "payloadType": "str",
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": "0.3",
-        "x": 220,
-        "y": 300,
-        "wires": [
-            [
-                "6eb98d5c.aca2c4"
-            ]
-        ],
-        "icon": "node-red/alert.png"
-    },
-    {
-        "id": "83177711.9a3798",
-        "type": "inject",
-        "z": "ccf5a9c4.5dc2b8",
+        "z": "905fe76e.0561c8",
         "name": "INICIO_Sim",
         "topic": "",
         "payload": "START",
         "payloadType": "str",
-        "repeat": "",
+        "repeat": "3600",
         "crontab": "",
         "once": false,
         "onceDelay": 0.1,
-        "x": 220,
-        "y": 225,
+        "x": 170,
+        "y": 175,
         "wires": [
             [
-                "6eb98d5c.aca2c4"
+                "bba4c333.162db"
             ]
         ]
     },
     {
-        "id": "98e199b9.9c7e88",
+        "id": "f0d325e.2e174d8",
         "type": "serial in",
-        "z": "ccf5a9c4.5dc2b8",
+        "z": "905fe76e.0561c8",
         "name": "Salida Datos",
         "serial": "10596ade.1a2f45",
-        "x": 220,
-        "y": 500,
+        "x": 145,
+        "y": 375,
         "wires": [
             [
-                "c4029a16.335138"
+                "42186ac5.c84f84"
             ]
         ],
         "icon": "node-red/bluetooth.png"
     },
     {
-        "id": "5855da87.ee1e04",
+        "id": "6177b73a.82b068",
         "type": "serial out",
-        "z": "ccf5a9c4.5dc2b8",
+        "z": "905fe76e.0561c8",
         "name": "Conexión BT",
         "serial": "10596ade.1a2f45",
-        "x": 1195,
-        "y": 225,
+        "x": 1145,
+        "y": 175,
         "wires": [],
         "icon": "node-red/bluetooth.png"
     },
     {
-        "id": "6eb98d5c.aca2c4",
-        "type": "looptimer",
-        "z": "ccf5a9c4.5dc2b8",
-        "duration": "1",
-        "units": "Hour",
-        "maxloops": "10000000",
-        "maxtimeout": "1000000",
-        "maxtimeoutunits": "Hour",
-        "name": "LOOP 1h",
-        "x": 385,
-        "y": 225,
-        "wires": [
-            [
-                "f76d716.df0c09"
-            ],
-            []
-        ]
-    },
-    {
-        "id": "8cc00774.cbd778",
+        "id": "ee766b45.eb5b08",
         "type": "function",
-        "z": "ccf5a9c4.5dc2b8",
+        "z": "905fe76e.0561c8",
         "name": "Noche",
         "func": "msg.payload=2;\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
-        "x": 850,
-        "y": 250,
+        "x": 800,
+        "y": 200,
         "wires": [
             [
-                "47bad9cd.18d178",
-                "5855da87.ee1e04"
+                "341581a.2736e7e",
+                "6177b73a.82b068"
             ]
         ]
     },
     {
-        "id": "941d3d7.670fec",
+        "id": "ccba501e.75d6",
         "type": "function",
-        "z": "ccf5a9c4.5dc2b8",
+        "z": "905fe76e.0561c8",
         "name": "Día",
         "func": "msg.payload=1;\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
-        "x": 850,
-        "y": 200,
+        "x": 800,
+        "y": 150,
         "wires": [
             [
-                "47bad9cd.18d178",
-                "5855da87.ee1e04"
+                "341581a.2736e7e",
+                "6177b73a.82b068"
             ]
         ]
     },
     {
-        "id": "f76d716.df0c09",
+        "id": "bba4c333.162db",
         "type": "time-range-switch",
-        "z": "ccf5a9c4.5dc2b8",
+        "z": "905fe76e.0561c8",
         "name": "",
         "lat": "37.3761",
         "lon": "-6.00238",
@@ -137,93 +97,93 @@
         "endTime": "sunsetStart",
         "startOffset": 0,
         "endOffset": 0,
-        "x": 610,
-        "y": 225,
+        "x": 560,
+        "y": 175,
         "wires": [
             [
-                "941d3d7.670fec"
+                "ccba501e.75d6"
             ],
             [
-                "8cc00774.cbd778"
+                "ee766b45.eb5b08"
             ]
         ]
     },
     {
-        "id": "28c9425e.d3c1be",
+        "id": "2c0872b7.01abfe",
         "type": "http request",
-        "z": "ccf5a9c4.5dc2b8",
+        "z": "905fe76e.0561c8",
         "name": "POST",
         "method": "POST",
         "ret": "obj",
         "paytoqs": false,
-        "url": "http://XXX.XXX.XXX.XXX:9200/sensores/datos_recibidos",
+        "url": "http://104.199.2.209:9200/sensores/datos_recibidos",
         "tls": "",
         "proxy": "",
         "authType": "basic",
-        "x": 975,
-        "y": 500,
+        "x": 900,
+        "y": 375,
         "wires": [
             [
-                "47bad9cd.18d178"
+                "341581a.2736e7e"
             ]
         ]
     },
     {
-        "id": "89438d5e.6ed3f",
+        "id": "23dc1169.bdfa4e",
         "type": "json",
-        "z": "ccf5a9c4.5dc2b8",
+        "z": "905fe76e.0561c8",
         "name": "",
         "property": "payload",
         "action": "",
         "pretty": true,
-        "x": 825,
-        "y": 500,
+        "x": 750,
+        "y": 375,
         "wires": [
             [
-                "28c9425e.d3c1be",
-                "47bad9cd.18d178"
+                "2c0872b7.01abfe",
+                "341581a.2736e7e"
             ]
         ]
     },
     {
-        "id": "47bad9cd.18d178",
+        "id": "341581a.2736e7e",
         "type": "debug",
-        "z": "ccf5a9c4.5dc2b8",
+        "z": "905fe76e.0561c8",
         "name": "",
         "active": true,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
         "complete": "payload",
-        "x": 1195,
-        "y": 350,
+        "x": 1145,
+        "y": 300,
         "wires": []
     },
     {
-        "id": "c4029a16.335138",
+        "id": "42186ac5.c84f84",
         "type": "function",
-        "z": "ccf5a9c4.5dc2b8",
+        "z": "905fe76e.0561c8",
         "name": "ELASTIC INSET DATA",
         "func": "var output = msg.payload.split(\"\\n\");\nvar a1 = {payload:output[0]};\nvar a2 = {payload:output[1]};\nvar a3 = {payload:output[2]};\n\nvar loc = [];\nvar mag = [];\n\n//MAGNITUD\nif (parseInt(output[0]) === 1) {\n   a1 = \"°C\" ;\n   mag = \"Temperatura\";}\nif (parseInt(output[0]) === 2) {\n   a1 = \"%\" ;\n   mag = \"Humedad Relativa\";}\nif (parseInt(output[0]) === 3) {\n   a1 = \"km/h\" ;\n   mag = \"Velocidad de Viento\";}\nif (parseInt(output[0]) === 4) {\n   a1 = \"mBar\" ;\n   mag = \"Presion\";}\nif (parseInt(output[0]) === 5) {\n   a1 = \"UV\" ;\n   mag = \"Indice UV\";}\n   \n//LOCALIZACION\nif (parseInt(output[1]) === 1) {\n   a2 = \"37.376370,-6.002678\";\n   loc = \"EPS\";}\nif (parseInt(output[1]) === 2) {\n   a2 = \"37.407866,-6.004571\";\n   loc = \"Cartuja\";}   \nif (parseInt(output[1]) === 3) {\n   a2 = \"37.358256,-5.987159\";\n   loc = \"ETSII\";}\nif (parseInt(output[1]) === 4) {\n   a2 = \"37.393349,-5.991788\";\n   loc = \"Setas\";}\nif (parseInt(output[1]) === 5) {\n   a2 = \"37.411458,-5.882584\";\n   loc = \"Aeropuerto\";}\n\nvar data={\"valor\":output[2], \n          \"magnitud\":a1, \n          \"m_descripcion\": mag, \n          \"coordenadas_xy\":a2,\n          \"l_descripcion\": loc,\n          \"timedata\":new Date()};\n\n\nnode.log(typeof data);\nmsg.payload= data;\n\n\nreturn msg;\n",
         "outputs": 1,
         "noerr": 0,
-        "x": 550,
-        "y": 500,
+        "x": 475,
+        "y": 375,
         "wires": [
             [
-                "89438d5e.6ed3f"
+                "23dc1169.bdfa4e"
             ]
         ],
         "icon": "node-red/leveldb.png"
     },
     {
-        "id": "4b51f392.88914c",
+        "id": "96097093.50096",
         "type": "comment",
-        "z": "ccf5a9c4.5dc2b8",
+        "z": "905fe76e.0561c8",
         "name": "Simulación de Sensores",
         "info": "",
-        "x": 235,
-        "y": 125,
+        "x": 175,
+        "y": 100,
         "wires": []
     },
     {
