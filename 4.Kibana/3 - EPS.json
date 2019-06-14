@@ -1,0 +1,19 @@
+[
+  {
+    "_id": "990964c0-8e23-11e9-ad7e-497638f8cf57",
+    "_type": "dashboard",
+    "_source": {
+      "title": "3- EPS",
+      "hits": 0,
+      "description": "",
+      "panelsJSON": "[{\"col\":1,\"id\":\"94726df0-8e17-11e9-a269-679fc4f4217a\",\"panelIndex\":1,\"row\":8,\"size_x\":4,\"size_y\":3,\"type\":\"visualization\"},{\"col\":11,\"id\":\"be8e8660-8e20-11e9-b98b-95f3314567b6\",\"panelIndex\":2,\"row\":1,\"size_x\":2,\"size_y\":2,\"type\":\"visualization\"},{\"col\":5,\"id\":\"b46bb3a0-8e17-11e9-a269-679fc4f4217a\",\"panelIndex\":3,\"row\":8,\"size_x\":4,\"size_y\":3,\"type\":\"visualization\"},{\"col\":6,\"id\":\"8640b290-8e22-11e9-b98b-95f3314567b6\",\"panelIndex\":4,\"row\":1,\"size_x\":5,\"size_y\":4,\"type\":\"visualization\"},{\"col\":9,\"id\":\"73acb080-8e17-11e9-a269-679fc4f4217a\",\"panelIndex\":5,\"row\":8,\"size_x\":4,\"size_y\":3,\"type\":\"visualization\"},{\"col\":1,\"id\":\"4b78a2e0-8e17-11e9-a269-679fc4f4217a\",\"panelIndex\":6,\"row\":1,\"size_x\":5,\"size_y\":4,\"type\":\"visualization\"},{\"col\":6,\"id\":\"d5cf5ec0-8e17-11e9-a269-679fc4f4217a\",\"panelIndex\":7,\"row\":5,\"size_x\":5,\"size_y\":3,\"type\":\"visualization\"},{\"col\":11,\"id\":\"0964b290-8e21-11e9-b98b-95f3314567b6\",\"panelIndex\":8,\"row\":3,\"size_x\":2,\"size_y\":2,\"type\":\"visualization\"},{\"col\":11,\"id\":\"22526180-8e21-11e9-b98b-95f3314567b6\",\"panelIndex\":9,\"row\":5,\"size_x\":2,\"size_y\":1,\"type\":\"visualization\"},{\"col\":11,\"id\":\"390c8ea0-8e21-11e9-b98b-95f3314567b6\",\"panelIndex\":10,\"row\":6,\"size_x\":2,\"size_y\":1,\"type\":\"visualization\"},{\"col\":11,\"id\":\"50c714c0-8e21-11e9-b98b-95f3314567b6\",\"panelIndex\":11,\"row\":7,\"size_x\":2,\"size_y\":1,\"type\":\"visualization\"},{\"size_x\":5,\"size_y\":3,\"panelIndex\":12,\"type\":\"visualization\",\"id\":\"0031bad0-8ed8-11e9-a719-3321e6222ba1\",\"col\":1,\"row\":5}]",
+      "optionsJSON": "{\"darkTheme\":true}",
+      "uiStateJSON": "{\"P-1\":{\"spy\":{\"mode\":{\"fill\":false,\"name\":null}},\"vis\":{\"legendOpen\":false}},\"P-3\":{\"vis\":{\"legendOpen\":false}},\"P-4\":{\"mapCenter\":[37.37708041276816,-5.9992218017578125]},\"P-5\":{\"vis\":{\"legendOpen\":false}},\"P-6\":{\"vis\":{\"colors\":{\"Temperatura EPS\":\"#629E51\"},\"legendOpen\":false}},\"P-7\":{\"vis\":{\"legendOpen\":false}},\"P-9\":{\"spy\":{\"mode\":{\"name\":null,\"fill\":false}}},\"P-12\":{\"vis\":{\"colors\":{\"Humedad Relativa\":\"#64B0C8\"},\"legendOpen\":true}}}",
+      "version": 1,
+      "timeRestore": false,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[{\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"query\":\"*\"}}}],\"highlightAll\":true,\"version\":true}"
+      }
+    }
+  }
+]

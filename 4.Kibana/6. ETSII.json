@@ -1,0 +1,19 @@
+[
+  {
+    "_id": "508b6e80-8e25-11e9-9a18-03b36460745d",
+    "_type": "dashboard",
+    "_source": {
+      "title": "6. ETSII",
+      "hits": 0,
+      "description": "",
+      "panelsJSON": "[{\"col\":1,\"id\":\"b1719b90-8e19-11e9-a269-679fc4f4217a\",\"panelIndex\":1,\"row\":8,\"size_x\":4,\"size_y\":3,\"type\":\"visualization\"},{\"col\":11,\"id\":\"d32f53f0-8e21-11e9-b98b-95f3314567b6\",\"panelIndex\":2,\"row\":1,\"size_x\":2,\"size_y\":2,\"type\":\"visualization\"},{\"col\":5,\"id\":\"d33a4a10-8e19-11e9-a269-679fc4f4217a\",\"panelIndex\":3,\"row\":8,\"size_x\":4,\"size_y\":3,\"type\":\"visualization\"},{\"col\":6,\"id\":\"f7fc9a70-8e22-11e9-b98b-95f3314567b6\",\"panelIndex\":4,\"row\":1,\"size_x\":5,\"size_y\":4,\"type\":\"visualization\"},{\"col\":9,\"id\":\"f7bce870-8e19-11e9-a269-679fc4f4217a\",\"panelIndex\":5,\"row\":8,\"size_x\":4,\"size_y\":3,\"type\":\"visualization\"},{\"col\":1,\"id\":\"50e54f50-8e1a-11e9-a269-679fc4f4217a\",\"panelIndex\":6,\"row\":1,\"size_x\":5,\"size_y\":4,\"type\":\"visualization\"},{\"col\":6,\"id\":\"1b5b4150-8e1a-11e9-a269-679fc4f4217a\",\"panelIndex\":7,\"row\":5,\"size_x\":5,\"size_y\":3,\"type\":\"visualization\"},{\"col\":11,\"id\":\"e6413990-8e21-11e9-b98b-95f3314567b6\",\"panelIndex\":8,\"row\":3,\"size_x\":2,\"size_y\":2,\"type\":\"visualization\"},{\"col\":11,\"id\":\"fde159e0-8e21-11e9-b98b-95f3314567b6\",\"panelIndex\":9,\"row\":5,\"size_x\":2,\"size_y\":1,\"type\":\"visualization\"},{\"col\":11,\"id\":\"2225b6c0-8e22-11e9-b98b-95f3314567b6\",\"panelIndex\":10,\"row\":6,\"size_x\":2,\"size_y\":1,\"type\":\"visualization\"},{\"col\":11,\"id\":\"43062820-8e22-11e9-b98b-95f3314567b6\",\"panelIndex\":11,\"row\":7,\"size_x\":2,\"size_y\":1,\"type\":\"visualization\"},{\"size_x\":5,\"size_y\":3,\"panelIndex\":12,\"type\":\"visualization\",\"id\":\"85f002d0-8ed8-11e9-a719-3321e6222ba1\",\"col\":1,\"row\":5}]",
+      "optionsJSON": "{\"darkTheme\":true}",
+      "uiStateJSON": "{\"P-1\":{\"vis\":{\"legendOpen\":false}},\"P-3\":{\"vis\":{\"colors\":{\"IndiceUV ETSII\":\"#F9D9F9\"},\"legendOpen\":false}},\"P-5\":{\"vis\":{\"legendOpen\":false}},\"P-6\":{\"vis\":{\"legendOpen\":false}},\"P-7\":{\"vis\":{\"colors\":{\"Velocidad Viento ETSII\":\"#E0752D\"},\"legendOpen\":false}},\"P-12\":{\"vis\":{\"colors\":{\"Humedad Relativa\":\"#64B0C8\"},\"legendOpen\":true}}}",
+      "version": 1,
+      "timeRestore": false,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[{\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"query\":\"*\"}}}],\"highlightAll\":true,\"version\":true}"
+      }
+    }
+  }
+]

@@ -1,0 +1,19 @@
+[
+  {
+    "_id": "5409a450-8e1b-11e9-bbbb-87e5d9632914",
+    "_type": "dashboard",
+    "_source": {
+      "title": "1- Dashboard General",
+      "hits": 0,
+      "description": "",
+      "panelsJSON": "[{\"col\":5,\"id\":\"4b936160-8e18-11e9-bbbb-87e5d9632914\",\"panelIndex\":1,\"row\":1,\"size_x\":4,\"size_y\":5,\"type\":\"visualization\"},{\"col\":9,\"id\":\"a542ebe0-8e13-11e9-bbbb-87e5d9632914\",\"panelIndex\":2,\"row\":1,\"size_x\":4,\"size_y\":5,\"type\":\"visualization\"},{\"col\":1,\"id\":\"c88668a0-8e15-11e9-bbbb-87e5d9632914\",\"panelIndex\":3,\"row\":13,\"size_x\":4,\"size_y\":3,\"type\":\"visualization\"},{\"col\":1,\"id\":\"320708d0-8e15-11e9-bbbb-87e5d9632914\",\"panelIndex\":4,\"row\":6,\"size_x\":4,\"size_y\":4,\"type\":\"visualization\"},{\"col\":1,\"id\":\"a950f2b0-8e16-11e9-bbbb-87e5d9632914\",\"panelIndex\":5,\"row\":10,\"size_x\":4,\"size_y\":3,\"type\":\"visualization\"},{\"col\":9,\"id\":\"1672ae70-8e16-11e9-bbbb-87e5d9632914\",\"panelIndex\":6,\"row\":6,\"size_x\":4,\"size_y\":4,\"type\":\"visualization\"},{\"col\":5,\"id\":\"f5dee100-8e16-11e9-bbbb-87e5d9632914\",\"panelIndex\":7,\"row\":10,\"size_x\":4,\"size_y\":6,\"type\":\"visualization\"},{\"col\":5,\"id\":\"b1640700-8e19-11e9-bbbb-87e5d9632914\",\"panelIndex\":8,\"row\":6,\"size_x\":2,\"size_y\":2,\"type\":\"visualization\"},{\"col\":7,\"id\":\"5346db70-8e19-11e9-bbbb-87e5d9632914\",\"panelIndex\":9,\"row\":6,\"size_x\":2,\"size_y\":2,\"type\":\"visualization\"},{\"col\":7,\"id\":\"02273000-8e19-11e9-bbbb-87e5d9632914\",\"panelIndex\":11,\"row\":8,\"size_x\":2,\"size_y\":2,\"type\":\"visualization\"},{\"col\":5,\"id\":\"881e1430-8e19-11e9-bbbb-87e5d9632914\",\"panelIndex\":12,\"row\":8,\"size_x\":2,\"size_y\":2,\"type\":\"visualization\"},{\"col\":1,\"id\":\"73b93690-8eba-11e9-bc31-a139b9f28f35\",\"panelIndex\":13,\"row\":1,\"size_x\":4,\"size_y\":5,\"type\":\"visualization\"},{\"col\":9,\"id\":\"dc8d03e0-8ed8-11e9-942d-f5a3b5a5b2d2\",\"panelIndex\":14,\"row\":10,\"size_x\":4,\"size_y\":6,\"type\":\"visualization\"}]",
+      "optionsJSON": "{\"darkTheme\":true}",
+      "uiStateJSON": "{\"P-1\":{\"mapCenter\":[37.38325280195101,-5.9511566162109375]},\"P-14\":{\"vis\":{\"colors\":{\"_\":\"#BA43A9\"},\"legendOpen\":false}},\"P-2\":{\"vis\":{\"colors\":{\"Count\":\"#B7DBAB\",\"Datos Recibidos\":\"#6ED0E0\"},\"legendOpen\":false}},\"P-3\":{\"vis\":{\"legendOpen\":false}},\"P-4\":{\"vis\":{\"colors\":{\"Temperatura (°C)\":\"#629E51\"},\"legendOpen\":false}},\"P-5\":{\"vis\":{\"colors\":{\"Índice UV\":\"#FCE2DE\"},\"legendOpen\":false}},\"P-6\":{\"vis\":{\"legendOpen\":false}},\"P-7\":{\"vis\":{\"legendOpen\":false}}}",
+      "version": 1,
+      "timeRestore": false,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[{\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"query\":\"*\"}}}],\"highlightAll\":true,\"version\":true}"
+      }
+    }
+  }
+]

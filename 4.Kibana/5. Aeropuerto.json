@@ -1,0 +1,19 @@
+[
+  {
+    "_id": "21cbcf90-8e25-11e9-aa3c-b32fe69e6e3e",
+    "_type": "dashboard",
+    "_source": {
+      "title": "5. Aeropuerto",
+      "hits": 0,
+      "description": "",
+      "panelsJSON": "[{\"col\":1,\"id\":\"062e6060-8e19-11e9-a269-679fc4f4217a\",\"panelIndex\":1,\"row\":8,\"size_x\":4,\"size_y\":3,\"type\":\"visualization\"},{\"col\":11,\"id\":\"e25ede00-8e1b-11e9-a269-679fc4f4217a\",\"panelIndex\":2,\"row\":1,\"size_x\":2,\"size_y\":2,\"type\":\"visualization\"},{\"col\":5,\"id\":\"cfab9a80-8e18-11e9-a269-679fc4f4217a\",\"panelIndex\":3,\"row\":8,\"size_x\":4,\"size_y\":3,\"type\":\"visualization\"},{\"col\":6,\"id\":\"dada4280-8e22-11e9-b98b-95f3314567b6\",\"panelIndex\":4,\"row\":1,\"size_x\":5,\"size_y\":4,\"type\":\"visualization\"},{\"col\":9,\"id\":\"5ae626b0-8e19-11e9-a269-679fc4f4217a\",\"panelIndex\":5,\"row\":8,\"size_x\":4,\"size_y\":3,\"type\":\"visualization\"},{\"col\":1,\"id\":\"1559cef0-8e17-11e9-a269-679fc4f4217a\",\"panelIndex\":6,\"row\":1,\"size_x\":5,\"size_y\":4,\"type\":\"visualization\"},{\"col\":6,\"id\":\"80cb3b40-8e19-11e9-a269-679fc4f4217a\",\"panelIndex\":7,\"row\":5,\"size_x\":5,\"size_y\":3,\"type\":\"visualization\"},{\"col\":11,\"id\":\"17b1d670-8e1c-11e9-a269-679fc4f4217a\",\"panelIndex\":8,\"row\":3,\"size_x\":2,\"size_y\":2,\"type\":\"visualization\"},{\"col\":11,\"id\":\"36d359c0-8e1c-11e9-a269-679fc4f4217a\",\"panelIndex\":9,\"row\":5,\"size_x\":2,\"size_y\":1,\"type\":\"visualization\"},{\"col\":11,\"id\":\"87472a40-8e1b-11e9-a269-679fc4f4217a\",\"panelIndex\":10,\"row\":6,\"size_x\":2,\"size_y\":1,\"type\":\"visualization\"},{\"col\":11,\"id\":\"6fe6b590-8e1c-11e9-a269-679fc4f4217a\",\"panelIndex\":11,\"row\":7,\"size_x\":2,\"size_y\":1,\"type\":\"visualization\"},{\"col\":1,\"id\":\"5aca7a90-8ed8-11e9-a719-3321e6222ba1\",\"panelIndex\":12,\"row\":5,\"size_x\":5,\"size_y\":3,\"type\":\"visualization\"}]",
+      "optionsJSON": "{\"darkTheme\":true}",
+      "uiStateJSON": "{\"P-1\":{\"vis\":{\"legendOpen\":false}},\"P-12\":{\"vis\":{\"colors\":{\"Humedad Relativa\":\"#64B0C8\",\"Temperatura\":\"#CCA300\"},\"legendOpen\":true}},\"P-3\":{\"vis\":{\"colors\":{\"IndiceUV Aeropuerto\":\"#F9D9F9\"},\"legendOpen\":false}},\"P-4\":{\"mapCenter\":[37.41145901149871,-5.882585942745209],\"mapZoom\":15},\"P-5\":{\"vis\":{\"colors\":{\"Presión Aeropuerto\":\"#E24D42\"},\"legendOpen\":false}},\"P-6\":{\"vis\":{\"colors\":{\"Temperatura Aeropuerto\":\"#508642\"},\"legendOpen\":false}},\"P-7\":{\"vis\":{\"colors\":{\"Velocidad del Viento Aeropuerto\":\"#EF843C\"},\"legendOpen\":false}}}",
+      "version": 1,
+      "timeRestore": false,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[{\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"query\":\"*\"}}}],\"highlightAll\":true,\"version\":true}"
+      }
+    }
+  }
+]

@@ -1,0 +1,19 @@
+[
+  {
+    "_id": "a65a91e0-8e1d-11e9-bbbb-87e5d9632914",
+    "_type": "dashboard",
+    "_source": {
+      "title": "2- Cartuja",
+      "hits": 0,
+      "description": "",
+      "panelsJSON": "[{\"col\":1,\"id\":\"79242f30-8e16-11e9-a269-679fc4f4217a\",\"panelIndex\":1,\"row\":9,\"size_x\":4,\"size_y\":3,\"type\":\"visualization\"},{\"col\":11,\"id\":\"acb91530-8e1c-11e9-a269-679fc4f4217a\",\"panelIndex\":2,\"row\":1,\"size_x\":2,\"size_y\":2,\"type\":\"visualization\"},{\"col\":5,\"id\":\"ab20a9a0-8e16-11e9-a269-679fc4f4217a\",\"panelIndex\":3,\"row\":9,\"size_x\":4,\"size_y\":3,\"type\":\"visualization\"},{\"col\":9,\"id\":\"d7c7efe0-8e16-11e9-a269-679fc4f4217a\",\"panelIndex\":4,\"row\":9,\"size_x\":4,\"size_y\":3,\"type\":\"visualization\"},{\"col\":1,\"id\":\"1027cfa0-8e16-11e9-a269-679fc4f4217a\",\"panelIndex\":5,\"row\":1,\"size_x\":5,\"size_y\":4,\"type\":\"visualization\"},{\"col\":6,\"id\":\"40613d50-8e16-11e9-a269-679fc4f4217a\",\"panelIndex\":6,\"row\":5,\"size_x\":5,\"size_y\":4,\"type\":\"visualization\"},{\"col\":6,\"id\":\"0837ef30-8e1d-11e9-a269-679fc4f4217a\",\"panelIndex\":7,\"row\":1,\"size_x\":5,\"size_y\":4,\"type\":\"visualization\"},{\"col\":11,\"id\":\"63439f90-8e1e-11e9-972c-a30789e68816\",\"panelIndex\":9,\"row\":3,\"size_x\":2,\"size_y\":2,\"type\":\"visualization\"},{\"col\":11,\"id\":\"ec093420-8e1e-11e9-972c-a30789e68816\",\"panelIndex\":11,\"row\":5,\"size_x\":2,\"size_y\":2,\"type\":\"visualization\"},{\"col\":11,\"id\":\"a5b0eef0-8e1e-11e9-972c-a30789e68816\",\"panelIndex\":14,\"row\":7,\"size_x\":2,\"size_y\":1,\"type\":\"visualization\"},{\"col\":11,\"id\":\"11299920-8e1f-11e9-ab2a-6facae87b0ff\",\"panelIndex\":15,\"row\":8,\"size_x\":2,\"size_y\":1,\"type\":\"visualization\"},{\"size_x\":5,\"size_y\":4,\"panelIndex\":16,\"type\":\"visualization\",\"id\":\"c6cc6e70-8ed7-11e9-a719-3321e6222ba1\",\"col\":1,\"row\":5}]",
+      "optionsJSON": "{\"darkTheme\":true}",
+      "uiStateJSON": "{\"P-1\":{\"vis\":{\"legendOpen\":false}},\"P-2\":{\"spy\":{\"mode\":{\"fill\":false,\"name\":null}}},\"P-3\":{\"vis\":{\"colors\":{\"IndiceUV Cartuja\":\"#F9D9F9\"},\"legendOpen\":false}},\"P-4\":{\"vis\":{\"colors\":{\"Presión Cartuja\":\"#E24D42\"},\"legendOpen\":false}},\"P-5\":{\"spy\":{\"mode\":{\"fill\":false,\"name\":null}},\"vis\":{\"legendOpen\":false}},\"P-6\":{\"spy\":{\"mode\":{\"fill\":false,\"name\":null}},\"vis\":{\"colors\":{\"Velocidad del Viento Cartuja\":\"#EF843C\"},\"legendOpen\":false}},\"P-7\":{\"mapCenter\":[37.40732367411947,-6.0121822357177725],\"mapZoom\":14,\"spy\":{\"mode\":{\"fill\":false,\"name\":null}}},\"P-16\":{\"vis\":{\"legendOpen\":true,\"colors\":{\"Humedad Relativa\":\"#6ED0E0\"}}}}",
+      "version": 1,
+      "timeRestore": false,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[{\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"query\":\"*\"}}}],\"highlightAll\":true,\"version\":true}"
+      }
+    }
+  }
+]
