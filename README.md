@@ -11,7 +11,7 @@
 </ul>
 
 <p><b>Resumen del Proyecto</b></p>
-
+<p>En el siguiente proyecto se desarrolla un sistema de simulación de datos de sensores medioambientales en tiempo real (temperatura, humedad, viento, presión, e índice UV) para un total de 5 lugares en la ciudad de Sevilla, España. Los datos simulados de estas localizaciones serán almacenados en un servidor web para luego ser mostrados mediante gráficas (dashboards). </p>
 
 <p><b>Archivos del Repositorio</b></p>
 <ol>
