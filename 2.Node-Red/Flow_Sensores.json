@@ -116,7 +116,7 @@
         "method": "POST",
         "ret": "obj",
         "paytoqs": false,
-        "url": "http://104.199.2.209:9200/sensores/datos_recibidos",
+        "url": "http://255.255.255.0:9200/sensores/datos_recibidos",
         "tls": "",
         "proxy": "",
         "authType": "basic",
