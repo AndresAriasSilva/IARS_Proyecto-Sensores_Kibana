@@ -15,10 +15,10 @@
 
 <p><b>Archivos del Repositorio</b></p>
 <ol>
-<li>Arduino: Repositorio del programa de Arduino para la simulacion de sensores y del programa usado para testear el sensor DHT11</li>
-<li>Node-Red: Repositorio de el flow donde se ecneuntran los nodos configurados, además se incluye el código del nodo ELASTIC INSET DATA  </li>
-<li>Elasticsearch: Repositorio del código de creción del índice y el códifo para borrar los datos del índice</li>
-<li>Kibana: Repositorio de los dashboardas creados en Kibana</li>
+<li>Arduino: Repositorio del programa de Arduino para la simulación de sensores y del programa usado para testear el sensor DHT11</li>
+<li>Node-Red: Repositorio de el flow donde se encuentran los nodos configurados, además se incluye el código del nodo ELASTIC INSET DATA  </li>
+<li>Elasticsearch: Repositorio del código de creación del índice y el código para borrar los datos del índice</li>
+<li>Kibana: Repositorio de los dashboards creados en Kibana</li>
 </ol>
 
 <p><b>Instalación de Elasticsearch mediante Docker</b></p>
