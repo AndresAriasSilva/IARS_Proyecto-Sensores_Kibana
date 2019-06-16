@@ -1,0 +1,55 @@
+var output = msg.payload.split("\n");
+var a1 = {payload:output[0]};
+var a2 = {payload:output[1]};
+var a3 = {payload:output[2]};
+
+var loc = [];
+var mag = [];
+
+//MAGNITUD
+if (parseInt(output[0]) === 1) {
+   a1 = "°C" ;
+   mag = "Temperatura";}
+if (parseInt(output[0]) === 2) {
+   a1 = "%" ;
+   mag = "Humedad Relativa";}
+if (parseInt(output[0]) === 3) {
+   a1 = "km/h" ;
+   mag = "Velocidad de Viento";}
+if (parseInt(output[0]) === 4) {
+   a1 = "mBar" ;
+   mag = "Presion";}
+if (parseInt(output[0]) === 5) {
+   a1 = "UV" ;
+   mag = "Indice UV";}
+   
+//LOCALIZACION
+if (parseInt(output[1]) === 1) {
+   a2 = "37.376370,-6.002678";
+   loc = "EPS";}
+if (parseInt(output[1]) === 2) {
+   a2 = "37.407866,-6.004571";
+   loc = "Cartuja";}   
+if (parseInt(output[1]) === 3) {
+   a2 = "37.358256,-5.987159";
+   loc = "ETSII";}
+if (parseInt(output[1]) === 4) {
+   a2 = "37.393349,-5.991788";
+   loc = "Setas";}
+if (parseInt(output[1]) === 5) {
+   a2 = "37.411458,-5.882584";
+   loc = "Aeropuerto";}
+
+var data={"valor":output[2], 
+          "magnitud":a1, 
+          "m_descripcion": mag, 
+          "coordenadas_xy":a2,
+          "l_descripcion": loc,
+          "timedata":new Date()};
+
+
+node.log(typeof data);
+msg.payload= data;
+
+
+return msg;
