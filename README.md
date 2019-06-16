@@ -11,14 +11,14 @@
 </ul>
 
 <p><b>Resumen del Proyecto</b></p>
-<p>En el siguiente proyecto se desarrolla un sistema de simulación de datos de sensores medioambientales en tiempo real (temperatura, humedad, viento, presión, e índice UV) para un total de 5 lugares en la ciudad de Sevilla, España. Los datos simulados de estas localizaciones serán almacenados en un servidor web para luego ser mostrados mediante gráficas (dashboards). </p>
+<p>En el siguiente proyecto se desarrolla un sistema de simulación de datos de sensores medioambientales en tiempo real (temperatura, humedad, viento, presión, e índice UV) para un total de 5 lugares en la ciudad de Sevilla, España. Los datos simulados de estas localizaciones serán almacenados en un servidor web para luego ser mostrados mediante gráficas en Kibana (dashboards). </p>
 
 <p><b>Archivos del Repositorio</b></p>
 <ol>
-<li>Arduino: Repositorio de....</li>
-<li>Node-Red: Repositorio de....</li>
-<li>Elasticsearch: Repositorio de....</li>
-<li>Elasticsearch: Repositorio de....</li>
+<li>Arduino: Repositorio del programa de Arduino para la simulacion de sensores y del programa usado para testear el sensor DHT11</li>
+<li>Node-Red: Repositorio de el flow donde se ecneuntran los nodos configurados, además se incluye el código del nodo ELASTIC INSET DATA  </li>
+<li>Elasticsearch: Repositorio del código de creción del índice y el códifo para borrar los datos del índice</li>
+<li>Kibana: Repositorio de los dashboardas creados en Kibana</li>
 </ol>
 
 <p><b>Instalación de Elasticsearch mediante Docker</b></p>
